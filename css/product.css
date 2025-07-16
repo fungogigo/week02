@@ -1,0 +1,80 @@
+.logo{
+    width: 129px;
+    padding:8px 12px;
+}
+.product-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+}
+.product-col{
+    width: calc(100%/12 *6);
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.price{
+    color:var(--primary-400);
+    font-weight: 700;
+    padding-right: 8px;
+}
+.org-price{
+    color:var(--neutral-500);
+    text-decoration: line-through;
+}
+.Platform-type{
+    width: 64px;
+}
+.shoes-color{
+    font-weight: 500;
+    color:var(--neutral-600);
+    text-align: center;
+}
+.btn-size{
+    border: 1px solid var(--neutral-300);
+    width: 160px;
+    font-weight: 500;
+}
+.btn-active, .btn-size:hover{
+    border: 1px solid var(--neutral-900);
+}
+.highlight{
+    color:var(--danger-300);
+}
+.bi-heart{
+    font-size: 20px;
+}
+.btn-add{
+    padding: 12px 82px;
+    border: 1px solid var(--neutral-900);
+}
+.bi-handbag{
+    font-size: 20px;
+    padding-right: 8px;
+}
+.btn-reserve{
+    background-color: var(--neutral-900);
+    color: var(--neutral-white);
+    padding: 12px 65.5px;
+}
+.material, .method, .purchase{
+    color: var(--neutral-600);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--neutral-300);
+}
+.like{
+    padding: 9.5px 0px;
+    padding-bottom: 16px;
+}
+.register{
+    background-color: var(--neutral-900);
+    color: var(--neutral-white);
+}
+.promote{
+    background-color: var(--primary-200);
+    margin-bottom: 64px;
+}
+.footer{
+    text-align: center;
+    color: var(--neutral-600);
+}

@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*顏色*/
+:root{
+	--neutral-white:#fff;
+	--neutral-900:#212529;
+	--neutral-600:#6C757D;
+	--neutral-500:#ADB5BD;
+	--neutral-300:#DEE2E6;
+	--primary-400:#57A203;
+	--primary-300:#C0FA73;
+	--primary-200:#E8FEC5;
+	--danger-300:#D74F4F;
+}
+*, *::before,*::after{   
+    box-sizing: border-box;
+}
+
+/*通用*/
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    letter-spacing: 0.05em;
+	font-size: 16px;
+	line-height: 1.5;
+	color:var(--neutral-900);
+}
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+img{
+	vertical-align: middle;
+	width: 100%;
+}
+a{
+	color:var(--neutral-900);
+    text-decoration: none;
+}
+.col-1{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12);
+}
+.col-2{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *2);
+}
+.col-3{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *3);
+}
+.col-4{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *4);
+}
+.col-5{
+	padding-left: 12px;
+	
+	width: calc(100%/12 *5);
+}
+.col-6{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *6);
+}
+.col-7{
+	
+	padding-right: 12px;
+	width: calc(100%/12 *7);
+}
+.col-8{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *8);
+}
+.col-9{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *9);
+}
+.col-10{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *10);
+}
+.col-11{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *11);
+}
+.col-12{
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100%/12 *12);
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+	justify-content: space-between;
+}
+.justify-center{
+	justify-content: center;
+}
+.align-center{
+	align-items: center;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+/*行高*/
+.l-15{
+    line-height: 1.5;
+}
+.l-12{
+    line-height: 1.2;
+}
+
+/*文字*/
+.h2{
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h3{
+	font-size: 28px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h4{
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.h6{
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+.text-md{
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.text-sm{
+	font-size: 14px;
+}
+.text-primary-400{
+	color:var(--primary-400);
+}
+.text-neutral-600{
+	color:var(--neutral-600);
+}
+
+/*間距*/
+.py-8{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.p-10{
+	padding: 10px;
+}
+.p-12{
+	padding: 12px;
+}
+.px-12{
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.py-12{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.py-24{
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+.pt-32{
+	padding-top: 32px;
+}
+.py-32{
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.py-48{
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.py-64{
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+.pr-8{
+	padding-right: 8px;
+}
+.pr-40{
+    padding-right: 40px;
+}
+.pr-0{
+	padding-right: 0px;
+}
+.pl-0{
+	padding-left: 0px;
+}
+.mr-8{
+	margin-right: 8px
+}
+.mr-12{
+	margin-right: 12px;
+}
+.mt-16{
+	margin-top: 16px;
+}
+.my-16{
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.my-48{
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+.mr-24{
+	margin-right: 24px;
+}
+.mr-48{
+    margin-right: 48px;
+}
+.mb-4{
+	margin-bottom: 4px;
+}
+.mb-8{
+	margin-bottom: 8px;
+}
+.mb-12{
+	margin-bottom: 12px;
+}
+.mb-16{
+	margin-bottom: 16px;
+}
+.mb-24{
+	margin-bottom: 24px;
+}
+.mb-32{
+	margin-bottom: 32px;
+}
+.mr-40{
+	margin-right: 40px;
+}
+.mb-40{
+	margin-bottom: 40px;
+}
+.mb-48{
+	margin-bottom: 48px;
+}
+.mb-64{
+	margin-bottom: 64px;
+}
+
+/*背景樣式*/
+.bg-primary-300{
+	background-color:var(--primary-300)
+}
+.bg-primary-200{
+	background-color:var(--primary-200)
+}
+
+/*元素*/
+.breadcrumb + .breadcrumb ::before{   /*元素之間才添加*/
+	content: "/";
+	padding: 0px 12px;
+	color:var(--neutral-300);
+	font-weight: 700;
+}
+.breadcrumb{
+	font-weight: 500;
+}
+.breadcrumb-link{
+	color:var(--neutral-600);
+}
+.btn{
+	border-radius: 4px;
+	padding: 12px 24px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+	cursor: pointer;  /*游標樣式改成手指*/
+	border: none;
+	background-color: transparent;
+}

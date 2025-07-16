@@ -1,0 +1,22 @@
+.page-item .btn{
+    padding: 8px 15px;
+    border-radius: 0;
+    font-weight: 400;
+}
+
+.active{
+    background: var(--primary-300);
+    font-weight: 500;
+}
+.register{
+    color:var(--neutral-white);
+    background-color: var(--neutral-900);
+}
+.b-logo{
+    width: 129px;
+}
+
+.footer{
+    text-align: center;
+    color:var(--neutral-600);
+}
